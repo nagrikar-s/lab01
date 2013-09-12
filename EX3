@@ -6,3 +6,13 @@
  
 
 (f 5)
+
+
+;; This is a new version to check git
+
+(define (average x y) (/(+ x y) 2)))
+
+
+
+(average 10 15)
+
