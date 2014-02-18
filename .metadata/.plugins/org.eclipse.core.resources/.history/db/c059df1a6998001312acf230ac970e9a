@@ -1,0 +1,16 @@
+package com.nagrikar.algorithm;
+
+public class InsertionSort {
+	public int[] sort(int[] array) {
+		return null;
+	}
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		System.out.println("insertion_sort");
+
+	}
+
+}
