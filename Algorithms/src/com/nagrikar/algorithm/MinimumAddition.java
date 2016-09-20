@@ -4,7 +4,7 @@ import javax.print.DocFlavor.STRING;
 
 public class MinimumAddition {
     public int getAddition(String numberString, int target, int addition) {
-        String prefix, sufix;
+        char[] prefix, sufix;
         int i, j;
         int[] totalAddition;
         if (Integer.valueOf(numberString) == target) {
@@ -13,11 +13,12 @@ public class MinimumAddition {
         if (Integer.valueOf(numberString) < target) {
             return Integer.MAX_VALUE;
         }
+        prefix = new char[numberString.length()];
         for (i = 0; i < numberString.length(); i++) {
             for (j = 0; j < i; j++) {
-                prefix[j] = numberString[i];
+                prefix[j] = numberString.charAt(i);
             }
-            int prefixValue = Integer.valueOf(prefix);
+            int prefixValue = Integer.valueOf(prefix[i]);
             if (prefixValue > target) {
                 break;
             } else {
